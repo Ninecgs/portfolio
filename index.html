@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">GYANNINE C.G.S.</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">GYANNINE C.G.S.</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="profile picture"class="about-pic"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá, eu sou</p>
+        <h1 class="title">Gyannine C. G. dos Santos</h1>
+        <p class="section__text__p2">Backend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contato
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/gyannine-gomes-a03692261/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Ninecgs'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Conheça-me!</p>
+      <h1 class="title">Sobre mim</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiência</h3>
+              <p>1 ano 7 meses <br /> Desenvolvimento Backend </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Educação</h3>
+              <p>Graduanda em Ciências da Computação</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Minha curiosidade em compreender a lógica por trás dos sistemas computacionais 
+              sempre me impulsionou a buscar conhecimento em diversas áreas da tecnologia.<br> <br>
+              Atualmente, curso Ciências da Computação na Universidade Federal de Sergipe e, 
+              ao longo de 1 ano e 6 meses de experiência em desenvolvimento web, adquiri proficiência 
+              em tecnologias como PHP, Laravel, HTML, CSS, JavaScript e MySQL. <br><br>
+              A combinação de minhas habilidades técnicas com uma criatividade aflorada 
+              reforça meu objetivo de me tornar uma desenvolvedora fullstack, 
+              focada em criar soluções manuteníveis, escaláveis, elegantes e criativas.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
+      onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">A minha</p>
+      <h1 class="title">Experiência</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Experiente</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Laravel</h3>
+                  <p>Experiente</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Javascript</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+
+              <article>
+               <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              
+            </article>
+           
+            
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML5</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Navegue pelos meus</p>
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">PSS SEMED Socorro 2024</h2>
+            <p><h3>Tecnologias: PHP, Laravel & JS</h3>
+              O PSS SEMED - Socorro 2024 foi desenvolvido para simplificar processos seletivos. 
+              Candidatos podem se registrar e submeter suas candidaturas, incluindo dados pessoais e documentos essenciais, de maneira ágil e direta.<br><br>
+
+              Para os avaliadores, o sistema proporciona uma interface centralizada que facilita a análise das candidaturas. 
+              Eles podem revisar, filtrar e avaliar os perfis de forma organizada e justa, garantindo uma seleção eficiente.<br><br>
+              
+              Com essa abordagem, o PSS SEMED - Socorro 2024 torna o processo seletivo mais claro e eficiente para todos os envolvidos.</p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SIGEF</h2>
+            <p><h3>Tecnologias: PHP & Laravel </h3>
+              O Sistema de Gerenciamento de Folgas (SIGEF) é uma plataforma que visa otimizar o controle de folgas dos funcionários. <br><br>
+               Os colaboradores podem solicitar folgas diretamente no sistema, enquanto os chefes de setor têm acesso a um calendário centralizado
+                que exibe as folgas já programadas e as folgas disponíveis para cada funcionário. <br><br>
+               Com base nessa visualização, os chefes podem aprovar ou rejeitar os pedidos de folga, garantindo um controle mais eficiente e transparente.</p>
+          
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SAAS</h2>
+              <p>
+                <h3>Tecnologias: PHP, Laravel & JS</h3>
+                O Sistema de Avaliação de Aprendizagem de Socorro (SAAS) foi desenvolvido para avaliar a qualidade do ensino no município. <br><br>
+                Professores inserem as notas de seus alunos diretamente no sistema, facilitando o registro e acompanhamento do desempenho acadêmico.<br><br>
+                Gestores escolares têm acesso a gráficos detalhados que mostram o desempenho dos alunos em suas respectivas escolas. <br><br>
+                Enquanto os coordenadores da Secretaria de Educação podem monitorar o desempenho de toda a rede escolar do município</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact">
+      <p class="section__text__p1">Para saber mais</p>
+      <h1 class="title">Contate-me!</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:nineszsocials@gmail.com">nineszsocials@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/gyannine-gomes-a03692261/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experienca</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>2024, Gyannine C. G. dos Santos</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
