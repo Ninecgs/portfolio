@@ -1,335 +1,270 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GCGS Portfolio</title>
-    <link rel="icon" href="assets\nine.png" type="image/png">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">GYANNINE C.G.S.</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#experience">Experiencia</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">GYANNINE C.G.S.</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="profile picture"class="about-pic"/>
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Olá, eu sou</p>
-        <h1 class="title">Gyannine C. G. dos Santos</h1>
-        <p class="section__text__p2">Backend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contato
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/gyannine-gomes-a03692261/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Ninecgs'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Conheça-me!</p>
-      <h1 class="title">Sobre mim</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experiência</h3>
-              <p>2 anos<br /> Desenvolvimento Backend </p>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyannine C. G. S. | Desenvolvedora Backend</title>
+    <meta name="description" content="Portfólio de Gyannine C. G. dos Santos, Desenvolvedora Backend com experiência em PHP, Laravel, e mais.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navegação -->
+    <header class="header">
+        <nav class="container nav">
+            <a href="#" class="nav-logo">Gyannine C.G.S.</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#experience" class="nav-link">Experiência</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Educação</h3>
-              <p>Graduanda em Ciências da Computação</p>
+            <!-- Botão Hamburger (Mobile) -->
+            <button id="menu-btn" class="hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+            </button>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Seção Profile -->
+        <section id="profile" class="section profile-section">
+            <div class="profile-text">
+                <p class="text-lead">Olá, eu sou</p>
+                <h1 class="title-xl">Gyannine C. G. dos Santos</h1>
+                <p class="text-xl">Desenvolvedora Backend</p>
+                <div class="button-group">
+                    <a href="#contact" class="btn btn-primary">Entre em Contato</a>
+                    <a href="./assets/resume.pdf" target="_blank" class="btn btn-secondary">Download CV</a>
+                </div>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/gyannine-gomes-a03692261/" target="_blank" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://github.com/Ninecgs" target="_blank" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Minha curiosidade em compreender a lógica por trás dos sistemas computacionais 
-              sempre me impulsionou a buscar conhecimento em diversas áreas da tecnologia.<br> <br>
-              Atualmente, curso Ciências da Computação na Universidade Federal de Sergipe e, 
-              ao longo de 2 anos de experiência em desenvolvimento web, adquiri proficiência 
-              em tecnologias como PHP, Laravel, HTML, CSS, JavaScript e MySQL. <br><br>
-              A combinação de minhas habilidades técnicas com uma criatividade aflorada 
-              reforça meu objetivo de me tornar uma desenvolvedora fullstack, 
-              focada em criar soluções manuteníveis, escaláveis, elegantes e criativas.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" 
-      onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">A minha</p>
-      <h1 class="title">Experiência</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PHP</h3>
-                  <p>Experiente</p>
+            <div class="profile-pic-container">
+                <div class="profile-pic-wrapper">
+                    <img src="./assets/profile-pic.png" onerror="this.src='https://placehold.co/400x400/e0e7ff/3730a3?text=Gyannine'" alt="Foto de perfil de Gyannine" class="profile-pic">
                 </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Laravel</h3>
-                  <p>Experiente</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Javascript</h3>
-                  <p>Intermediário</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediário</p>
-                </div>
-              </article>
-
-              <article>
-               <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL</h3>
-                  <p>Básico</p>
-                </div>
-              </article>
-              
-            </article>
-           
-            
-
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML5</h3>
-                  <p>Intermediário</p>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about" class="section reveal">
+            <div class="section-title">
+                <p class="text-lead">Conheça-me</p>
+                <h2 class="title-lg">Sobre Mim</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image-container">
+                    <img src="./assets/about-pic.png" onerror="this.src='https://placehold.co/400x400/e0e7ff/4338ca?text=Dev'" alt="Imagem ilustrativa sobre desenvolvimento" class="about-pic">
                 </div>
-              </article>
-              
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediário</p>
+                <div class="about-details">
+                    <div class="info-cards">
+                        <div class="card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <h3 class="card-title">Experiência</h3>
+                            <p>2+ anos<br>Desenvolvimento Backend</p>
+                        </div>
+                        <div class="card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="card-icon"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            <h3 class="card-title">Educação</h3>
+                            <p>Ciências da Computação<br>Universidade Federal de Sergipe</p>
+                        </div>
+                    </div>
+                    <p class="text-justify">
+                        Minha curiosidade em compreender a lógica por trás dos sistemas computacionais sempre me impulsionou a buscar conhecimento em diversas áreas da tecnologia. Atualmente, curso Ciências da Computação na UFS e, ao longo de 2 anos de experiência, adquiri proficiência em tecnologias como PHP, Laravel, HTML, CSS, JavaScript e MySQL. A combinação das minhas habilidades técnicas com uma criatividade aflorada reforça o meu objetivo de me tornar uma desenvolvedora full-stack, focada em criar soluções manuteníveis, escaláveis, elegantes e criativas.
+                    </p>
                 </div>
-              </article>
             </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Navegue pelos meus</p>
-      <h1 class="title">Projetos</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+        </section>
+
+        <!-- Seção Experiência -->
+        <section id="experience" class="section reveal">
+            <div class="section-title">
+                <p class="text-lead">Minhas Habilidades</p>
+                <h2 class="title-lg">Experiência</h2>
             </div>
-            <h2 class="experience-sub-title project-title">PSS SEMED Socorro 2024</h2>
-            <p><h3>Tecnologias: PHP, Laravel & JS</h3>
-              O PSS SEMED - Socorro 2024 foi desenvolvido para simplificar processos seletivos. 
-              Candidatos podem se registrar e submeter suas candidaturas, incluindo dados pessoais e documentos essenciais, de maneira ágil e direta.<br><br>
-
-              Para os avaliadores, o sistema proporciona uma interface centralizada que facilita a análise das candidaturas. 
-              Eles podem revisar, filtrar e avaliar os perfis de forma organizada e justa, garantindo uma seleção eficiente.<br><br>
-              
-              Com essa abordagem, o PSS SEMED - Socorro 2024 torna o processo seletivo mais claro e eficiente para todos os envolvidos.</p>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+            <div class="experience-container">
+                <!-- Backend -->
+                <div class="experience-card">
+                    <h3 class="experience-title">Desenvolvimento Backend</h3>
+                    <div class="skills-grid">
+                        <article class="skill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <div><h4>PHP</h4><p class="skill-level">Experiente</p></div>
+                        </article>
+                        <article class="skill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <div><h4>Laravel</h4><p class="skill-level">Experiente</p></div>
+                        </article>
+                        <article class="skill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <div><h4>Git</h4><p class="skill-level">Intermediário</p></div>
+                        </article>
+                        <article class="skill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <div><h4>MySQL/MariaDB</h4><p class="skill-level">Básico</p></div>
+                        </article>
+                    </div>
+                </div>
+                <!-- Frontend -->
+                <div class="experience-card">
+                    <h3 class="experience-title">Desenvolvimento Frontend</h3>
+                    <div class="skills-grid">
+                        <article class="skill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <div><h4>HTML5</h4><p class="skill-level">Intermediário</p></div>
+                        </article>
+                        <article class="skill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <div><h4>CSS</h4><p class="skill-level">Básico</p></div>
+                        </article>
+                        <article class="skill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <div><h4>JavaScript</h4><p class="skill-level">Intermediário</p></div>
+                        </article>
+                        <article class="skill">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="skill-icon"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            <div><h4>Figma</h4><p class="skill-level">Básico</p></div>
+                        </article>
+                    </div>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">SIGEF</h2>
-            <p><h3>Tecnologias: PHP & Laravel </h3>
-              O Sistema de Gerenciamento de Folgas (SIGEF) é uma plataforma que visa otimizar o controle de folgas dos funcionários. <br><br>
-               Os colaboradores podem solicitar folgas diretamente no sistema, enquanto os chefes de setor têm acesso a um calendário centralizado
-                que exibe as folgas já programadas e as folgas disponíveis para cada funcionário. <br><br>
-               Com base nessa visualização, os chefes podem aprovar ou rejeitar os pedidos de folga, garantindo um controle mais eficiente e transparente.</p>
-          
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projects" class="section reveal">
+            <div class="section-title">
+                <p class="text-lead">Navegue pelos meus</p>
+                <h2 class="title-lg">Projetos Recentes</h2>
             </div>
-            <h2 class="experience-sub-title project-title">SAAS</h2>
-              <p>
-                <h3>Tecnologias: PHP, Laravel & JS</h3>
-                O Sistema de Avaliação de Aprendizagem de Socorro (SAAS) foi desenvolvido para avaliar a qualidade do ensino no município. <br><br>
-                Professores inserem as notas de seus alunos diretamente no sistema, facilitando o registro e acompanhamento do desempenho acadêmico.<br><br>
-                Gestores escolares têm acesso a gráficos detalhados que mostram o desempenho dos alunos em suas respectivas escolas. <br><br>
-                Enquanto os coordenadores da Secretaria de Educação podem monitorar o desempenho de toda a rede escolar do município</p>
-          </div>
-        </div>
-      </div>
-    </section>
+            <div class="projects-grid">
+               <!-- Projeto Figma: SIGAAF -->
+                <div class="project-card clickable" data-project="sigaaf">
+                    <img src="./assets/sigaaf-thumbnail.png" onerror="this.src='https://placehold.co/600x400/a259ff/ffffff?text=SIGAAF'" alt="Imagem do Projeto SIGAAF" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">SIGAAF - Design de Sistema</h3>
+                        <p class="project-description">UI/UX Design para o Sistema Integrado de Gestão para Apoio à Agricultura Familiar. Clique para ver as imagens.</p>
+                        <div class="tags">
+                            <span class="tag tag-figma">Figma</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Protótipo</span>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Projeto Cosplay -->
+                <a href="https://ninecgs.github.io/cosplay-LP/#" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <img src="./assets/lp-thumbnail.png" onerror="this.src='https://placehold.co/600x400/a259ff/ffffff?text=Landing Page'" alt="Imagem do Projeto Landing Page" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">Landing Page Cosplay</h3>
+                        <p class="project-description">Landing page criativa para portfólio de cosplay, com design responsivo e foco na apresentação visual de projetos artísticos.</p>
+                        <div class="tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </a>
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <img src="./assets/project-1.png" onerror="this.src='https://placehold.co/600x400/e0e7ff/4338ca?text=Projeto+1'" alt="Imagem do Projeto 1" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">PSS SEMED Socorro 2024</h3>
+                        <p class="project-description">Sistema para simplificar processos seletivos, com registro de candidatos e interface de avaliação.</p>
+                        <div class="tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="project-card">
+                    <img src="./assets/project-2.png" onerror="this.src='https://placehold.co/600x400/c7d2fe/4f46e5?text=Projeto+2'" alt="Imagem do Projeto 2" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">SIGEF</h3>
+                        <p class="project-description">Sistema de Gerenciamento de Folgas que otimiza o controle de folgas dos funcionários.</p>
+                        <div class="tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 3 -->
+                <div class="project-card">
+                    <img src="./assets/project-3.png" onerror="this.src='https://placehold.co/600x400/a5b4fc/5b21b6?text=Projeto+3'" alt="Imagem do Projeto 3" class="project-img">
+                    <div class="project-info">
+                        <h3 class="project-title">SAAS</h3>
+                        <p class="project-description">Sistema de Avaliação de Aprendizagem para avaliar a qualidade do ensino municipal.</p>
+                        <div class="tags">
+                            <span class="tag">PHP</span>
+                            <span class="tag">Laravel</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
 
+        <!-- Seção Contato -->
+        <section id="contact" class="section reveal">
+            <div class="section-title">
+                <p class="text-lead">Para saber mais</p>
+                <h2 class="title-lg">Contate-me</h2>
+            </div>
+            <div class="contact-card">
+                <div class="contact-links">
+                    <a href="mailto:nineszsocials@gmail.com" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        <span>nineszsocials@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/gyannine-gomes-a03692261/" target="_blank" class="contact-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-      <p class="section__text__p1">Para saber mais</p>
-      <h1 class="title">Contate-me!</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:nineszsocials@gmail.com">nineszsocials@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/gyannine-gomes-a03692261/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
+    </main>
 
-
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#experience">Experienca</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
-          </ul>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <nav class="footer-nav">
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#experience" class="nav-link">Experiência</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+            <p>&copy; 2025, Gyannine C. G. dos Santos. Todos os direitos reservados.</p>
         </div>
-      </nav>
-      <p>2025, Gyannine C. G. dos Santos</p>
     </footer>
-    <script src="script.js"></script>
-  </body>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3 id="modal-title"></h3>
+            <div id="modal-images">
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Externo -->
+    <script src="js/script.js"></script>
+</body>
 </html>
